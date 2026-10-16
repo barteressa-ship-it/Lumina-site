@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://barteressa-ship-it.github.io/Lumina-site/sitemap.xml

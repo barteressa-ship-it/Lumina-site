@@ -201,6 +201,11 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: s
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 
 /* SEO-BUILD: acessibilidade, desempenho e ajustes */
+html { overflow-x: clip; }
+@media (max-width: 900px) {
+  .js-rv .rv[data-r="l"], .js-rv .rv[data-r="r"] { translate: 0 36px; }
+  .js-rv .rv.in { translate: 0 0; }
+}
 @media (min-width: 901px) { .card:nth-child(5), .card:nth-child(6) { grid-column: span 3; } }
 @media (min-width: 641px) and (max-width: 900px) { .card:nth-child(6) { grid-column: span 6; } }
 .skip { position: absolute; left: 12px; top: -60px; z-index: 30; background: var(--gold-btn); color: var(--on-gold); font-weight: 700; padding: 10px 18px; border-radius: 999px; text-decoration: none; }
